@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 1.5rem;
+  color: #2c3e50;
+}
+
+.banner-container {
+  max-width: 960px;
+  margin: 0 auto 2rem auto;
+  padding: 0;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 0.5rem;
+}
+
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.formulario, .activadores {
+  flex: 1;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+label {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: block;
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+input, select, button {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fefefe;
+  color: #2c3e50;
+}
+
+.dias-semana label {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 102, 204, 0.15);
+  font-weight: 600;
+  padding: 0.7rem;
+}
+
+button:hover {
+  background: #004b99;
+  transform: translateY(-1px);
+}
+
+.activador {
+  background: #eaf3fc;
+  border-left: 4px solid #0066cc;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+.creawebes-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+

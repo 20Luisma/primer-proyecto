@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Activadores en Firebase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="banner-container">
+    <img src="banner.png" alt="Automatiza tus Publicaciones con Webhooks en Redes Sociales" class="banner">
+  </header>
+
+  <div class="layout">
+    <div class="formulario">
+      <label for="nombreProgramador">Nombre del programador:</label>
+      <input type="text" id="nombreProgramador">
+
+      <label for="comentario">Comentario:</label>
+      <input type="text" id="comentario">
+
+      <label for="tipo">Método:</label>
+      <select id="tipo">
+        <option value="una">Puntual</option>
+        <option value="semanal">Semanal</option>
+      </select>
+
+      <div id="fechaPuntualContainer">
+        <label for="fechaUnica">Fecha puntual:</label>
+        <input type="date" id="fechaUnica">
+      </div>
+
+      <div id="diasSemana" class="dias-semana" style="display:none;">
+        <label><input type="checkbox" value="Lunes">Lunes</label>
+        <label><input type="checkbox" value="Martes">Martes</label>
+        <label><input type="checkbox" value="Miércoles">Miércoles</label>
+        <label><input type="checkbox" value="Jueves">Jueves</label>
+        <label><input type="checkbox" value="Viernes">Viernes</label>
+        <label><input type="checkbox" value="Sábado">Sábado</label>
+        <label><input type="checkbox" value="Domingo">Domingo</label>
+      </div>
+
+      <label for="horaInicio">Hora desde:</label>
+      <input type="time" id="horaInicio">
+
+      <label for="horaFin">Hora hasta:</label>
+      <input type="time" id="horaFin">
+
+      <label for="webhook">URL del Webhook:</label>
+      <input type="url" id="webhook">
+
+      <button id="btnGuardar">Agregar activador</button>
+    </div>
+
+    <div class="activadores">
+      <h2>Lista de Activadores</h2>
+      <div id="listaActivadores"></div>
+    </div>
+  </div>
+
+  <div id="toast">Activador guardado con éxito ✅</div>
+
+  <footer class="creawebes-footer">
+    Hecho con 💙 por <strong>Creawebes</strong>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+
+  <!-- Archivos JS externos -->
+  <script src="firebase-config.js"></script>
+  <script src="main.js"></script>
+  <script type="module" src="logica.js"></script>
+</body>
+</html>
